@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width,
+        initial-scale=1.0,
+        maximum-scale=1.0,
+        user-scalable=no"
+    >
+
+    <title>Samurai Run</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="game"></canvas>
+
+    <!-- HUD -->
+    <div id="hud">
+        <div class="game-title">⚔ SAMURAI RUN</div>
+
+        <div class="stats">
+            <span id="score">0</span>
+            <span>🪙 <b id="coins">0</b></span>
+        </div>
+    </div>
+
+
+    <!-- START SCREEN -->
+    <div id="startScreen" class="screen">
+
+        <h1>SAMURAI RUN</h1>
+
+        <p>
+            The Ronin's Endless Journey
+        </p>
+
+        <div class="controls">
+            Swipe ← → to move<br>
+            Swipe ↑ to jump<br>
+            Swipe ↓ to roll
+        </div>
+
+        <button id="startButton">
+            START RUN
+        </button>
+
+    </div>
+
+
+    <!-- GAME OVER -->
+    <div id="gameOver" class="screen hidden">
+
+        <h2>RUN ENDED</h2>
+
+        <p>
+            Score:
+            <b id="finalScore">0</b>
+        </p>
+
+        <p>
+            Coins:
+            <b id="finalCoins">0</b>
+        </p>
+
+        <button id="restartButton">
+            RUN AGAIN
+        </button>
+
+    </div>
+
+
+    <script src="game.js"></script>
+
+</body>
+</html>
